@@ -36,8 +36,8 @@ function FadeIn({ children, delay = 0, style = {} }) {
   );
 }
 
-function Section({ children, bg = WHITE, style = {} }) {
-  return <div style={{ background: bg, padding: "80px 24px", ...style }}><div style={{ maxWidth: 1080, margin: "0 auto" }}>{children}</div></div>;
+function Section({ children, bg = WHITE, style = {}, id }) {
+  return <div id={id} style={{ background: bg, padding: "80px 24px", ...style }}><div style={{ maxWidth: 1080, margin: "0 auto" }}>{children}</div></div>
 }
 
 function SectionLabel({ text, color = TEAL }) {
